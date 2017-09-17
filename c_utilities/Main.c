@@ -8,7 +8,7 @@
 
 int main(int argc, char* argv[]) {
 
-	const char* infile = "edges.txt";
+	const char* infile = "/home/ateffal/git/c_utilities/c_utilities/edges.txt";
 
 	long int i;
 
