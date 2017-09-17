@@ -177,7 +177,7 @@ unsigned long int QuickSort(int tableau[][2], int debut, int fin, int type_pivot
 	return(NC+NC_l+NC_r);
 }
 
-int main(int argc, char* argv[]) {
+/*int main(int argc, char* argv[]) {
 	unsigned long int N = 0;
 	int test[7][2];
 	test[0][0] = 12;
@@ -210,4 +210,4 @@ int main(int argc, char* argv[]) {
 	}
 }
 
-
+*/

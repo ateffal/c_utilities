@@ -150,40 +150,5 @@ char** read_csv(const char* file ) {
 
 
 
-int main(int argc, char* argv[]) {
 
-	const char* infile = "edges.txt";
-
-	long int i;
-
-
-	//Example using read_csv
-	/*
-
-	char** data1;
-
-	data1 = read_csv(infile);
-
-	printf("Entête : %s\n",data1[0]);
-	for(i=1;i<11;i++) {
-		printf("Ligne %d : ",i);
-		printf("%s\n",data1[i]);
-	}
-
-	*/
-
-	//Example using read_csv_0
-	CSV_File *csvf1;
-
-	csvf1=read_csv_0(infile);
-	printf("Nombre de ligne = %ld\n",csvf1->n);
-	printf("Entête = %s\n",csvf1->header);
-	for(i=0;i<10;i++) {
-		printf("Ligne %d : ",i);
-		printf("%s\n",csvf1->data[i]);
-	}
-
-
-	return 0;
-}
 
