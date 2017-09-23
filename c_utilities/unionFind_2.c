@@ -5,7 +5,7 @@
 
 
 
-int Find(int t[], int n, int x) {
+int Find_2(int t[], int n, int x) {
 	
 	if(x>=n) {
 		printf("Find failed ! x must be smaller than n ! \n");
@@ -28,7 +28,7 @@ int Find(int t[], int n, int x) {
 	return i;
 }
 
-int Union(int t[], int n, int x, int y) {
+int Union_2(int t[], int n, int x, int y) {
 	
 	if(x>=n || y>=n) {
 		printf("Union failed ! x and y must be smaller than n ! \n");
@@ -38,15 +38,15 @@ int Union(int t[], int n, int x, int y) {
 	int x_parent;
 	int y_parent;
 	
-	x_parent=Find(t,n,x);
-	y_parent=Find(t,n,y);
+	x_parent=Find_2(t,n,x);
+	y_parent=Find_2(t,n,y);
 	
 	t[x_parent] = y_parent;
 	
 	return 1;
 }
 
-void display(int t[],int n) {
+void display_2(int t[],int n) {
 	int i;
 	printf("-----------------------------------\n");
 	for(i=0;i<5;i++) {
@@ -56,22 +56,22 @@ void display(int t[],int n) {
 	printf("-----------------------------------\n");
 }
 
-//int main(int argc, char* argv[]) {
-//
-//	int t1[5];
-//	int i;
-//	for(i=0;i<5;i++) {
-//		t1[i]=i;
-//	}
-//
-//	display(t1,5);
-//
-//	Union(t1,5,1,0);
-//
-//	Union(t1,5,0,4);
-//
-//	display(t1,5);
-//
-//	printf("cluster of 1 = %d",Find(t1,5,1));
-//
-//}
+/*int main(int argc, char* argv[]) {
+	
+	int t1[5];
+	int i;
+	for(i=0;i<5;i++) {
+		t1[i]=i;
+	}
+	
+	display(t1,5);
+	
+	Union(t1,5,1,0);
+	
+	Union(t1,5,0,4);
+	
+	display(t1,5);
+	
+	printf("cluster of 1 = %d",Find(t1,5,1));
+	
+}*/

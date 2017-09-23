@@ -8,18 +8,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#define MAX_COL 64
-#define MAX_WORD 100
-#define MAX_LINES 1000000
+#include "/home/ateffal/git/c_utilities/c_utilities/c_utilities.h"
 
 
-typedef struct CSV_File {
-	int n;              //Number of rows excluding header
-	int m;              //Number of columns
-	char header[MAX_COL*MAX_WORD];       //Header
-	char* data[];    //Data - Each pointer points to a line of data (m columns separated with ";"
-
-} CSV_File;
 
 
 CSV_File* read_csv_0(const char* file ) {
@@ -145,9 +136,6 @@ char** read_csv(const char* file ) {
 	return data;
 
 }
-
-
-
 
 
 

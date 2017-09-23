@@ -4,7 +4,9 @@
  *  Created on: 17 sept. 2017
  *      Author: ateffal
  */
-#include "/home/ateffal/git/c_utilities/c_utilities/read_csv.c"
+#include "c_utilities.h"
+
+
 
 int main(int argc, char* argv[]) {
 
@@ -13,9 +15,9 @@ int main(int argc, char* argv[]) {
 	long int i;
 
 	//Example using read_csv
-	/*
 
-	 char** data1;
+
+	 /*char** data1;
 
 	 data1 = read_csv(infile);
 
@@ -24,11 +26,11 @@ int main(int argc, char* argv[]) {
 	 printf("Ligne %d : ",i);
 	 printf("%s\n",data1[i]);
 	 }
+*/
 
-	 */
 
 	//Example using read_csv_0
-	CSV_File *csvf1;
+	/*CSV_File *csvf1;
 
 	csvf1 = read_csv_0(infile);
 	printf("Nombre de ligne = %ld\n", csvf1->n);
@@ -36,9 +38,9 @@ int main(int argc, char* argv[]) {
 	for (i = 0; i < 10; i++) {
 		printf("Ligne %d : ", i);
 		printf("%s\n", csvf1->data[i]);
-	}
+	}*/
 
-	/*
+
 	 //Example using quickSort.c
 	 unsigned long int N = 0;
 	 int test[7][2];
@@ -59,7 +61,7 @@ int main(int argc, char* argv[]) {
 	 test[6][1] = 6;
 
 	 N= QuickSort(test,0,7,1);
-	 int i;
+
 
 	 printf("N = %d\n",N);
 	 for(i=0; i<7; i++) {
@@ -70,7 +72,7 @@ int main(int argc, char* argv[]) {
 	 for(i=0; i<7; i++) {
 	 printf(" test[%d][1] = %d \n",i,test[i][1]);
 	 }
-	 */
+
 
 	return 0;
 }
